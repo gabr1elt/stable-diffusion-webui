@@ -123,7 +123,7 @@ RUN stable-diffusion-webui/webui.sh ${CLI_ARGS}
 
 
 # avoid all ADDs
-FROM gabr1elt/automatic1111:base as run
+FROM base as run
 
 RUN ln -s /home/user/stable-diffusion-webui/venv/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so /home/user/stable-diffusion-webui/venv/lib/python3.10/site-packages/bitsandbytes/libsbitsandbytes_cpu.so
 
