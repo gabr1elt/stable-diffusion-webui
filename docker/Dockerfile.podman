@@ -138,7 +138,8 @@ EXPOSE 7860
 
 # ENV CLI_ARGS="--skip-torch-cuda-test --listen --no-half --precision full --allow-code --enable-insecure-extension-access --api"
 # ENV CLI_ARGS="--skip-torch-cuda-test --listen --no-half --enable-insecure-extension-access"
-ENV CLI_ARGS="--skip-torch-cuda-test --listen --no-half --enable-insecure-extension-access --force-cpu"
+# ENV CLI_ARGS="--skip-torch-cuda-test --listen --no-half --enable-insecure-extension-access --force-cpu"
+ENV CLI_ARGS="--listen --enable-insecure-extension-access"
 
 USER root
 
